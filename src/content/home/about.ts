@@ -6,7 +6,7 @@ export const about = {
 
     "I received M.S. and Ph.D. degrees in Computer Science from Florida International University. I worked under the supervision of Dr. S. S. Iyengar and Dr. Niki Pissinou.  I completed my Bachelor's degree in Computer Science and Engineering from Bangladesh University of Engineering and Technology (BUET)",
 
-    "Research Interests: Internet of Things, Machine learning, Mobile Computing, Security and Data Mining. "
+    "Research Interests: Internet of Things (IoT), Machine learning, Mobile Computing, Security and Data Mining. "
   ],
   links: [
     {
