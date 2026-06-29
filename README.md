@@ -246,8 +246,8 @@ src/app/globals.css
 
 ## Notes
 
-- Home is a scrollable one-page profile.
-- Other navigation tabs are separate pages.
+- Home is a scrollable one-page profile
+- Other navigation tabs are separate pages
 - The header/navigation is shared across pages.
 - Card shadow styling is centralized in `src/app/globals.css`.
 - Google Fonts are used through Next.js, so the first build may need internet access.
