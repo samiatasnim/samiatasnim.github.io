@@ -3,6 +3,7 @@ import {
   GraduationCap,
   Linkedin,
   Mail,
+  IdCard,
   MapPin,
 } from "lucide-react";
 import Image from "next/image";
