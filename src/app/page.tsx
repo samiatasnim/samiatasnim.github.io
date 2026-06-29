@@ -42,7 +42,7 @@ export default function Home() {
           <TimelineSection
             icon={<BriefcaseBusiness />}
             eyebrow="Work Experience"
-            heading="Faculty roles and academic leadership"
+          //  heading="Faculty roles and academic leadership"
             items={workExperience.map((item) => ({
               title: item.role,
               meta: `${item.organization} | ${item.period}`,
