@@ -90,6 +90,36 @@ function PortraitPanel() {
         </div>
       </div>
     </div>
+      <div className="mt-4 grid gap-2">
+        <a
+          href="https://scholar.google.com/citations?user=bo89KqcAAAAJ&hl=en"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center justify-center gap-2 rounded border border-[#1e40af]/25 bg-white px-3 py-2 text-sm font-semibold text-[#1e40af] transition hover:bg-[#eff6ff]"
+        >
+          <GraduationCap className="h-4 w-4" />
+          Google Scholar
+        </a>
+
+        <a
+          href="https://orcid.org/0009-0002-1090-2887"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center justify-center gap-2 rounded border border-[#16a34a]/25 bg-white px-3 py-2 text-sm font-semibold text-[#166534] transition hover:bg-[#f0fdf4]"
+        >
+          <IdCard className="h-4 w-4" />
+          ORCID
+        </a>
+
+        <a
+          href={`mailto:${contact.email}`}
+          className="flex items-center justify-center gap-2 rounded border border-[#7c3aed]/25 bg-white px-3 py-2 text-sm font-semibold text-[#6d28d9] transition hover:bg-[#f5f3ff]"
+        >
+          <Mail className="h-4 w-4" />
+          Email
+        </a>
+      </div>
+    </div>
   );
 }
 
