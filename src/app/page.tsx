@@ -52,7 +52,7 @@ export default function Home() {
           <TimelineSection
             icon={<GraduationCap />}
             eyebrow="Education"
-            heading="Academic background"
+          //  heading="Academic background"
             items={education.map((item) => ({
               title: item.degree,
               meta: `${item.institution} | ${item.year}`,
