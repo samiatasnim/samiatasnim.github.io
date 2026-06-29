@@ -41,6 +41,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:px-8">
           <TimelineSection
             icon={<BriefcaseBusiness />}
+            //  eyebrow="Experience"
             heading="Work Experience"
             items={workExperience.map((item) => ({
               title: item.role,
