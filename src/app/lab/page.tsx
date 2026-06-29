@@ -72,7 +72,7 @@ export default function LabPage() {
         </section>
 
         <section className="mx-auto mt-10 max-w-6xl text-left">
-          <h2 className="font-serif text-3xl text-[#1e40af]">Past Members / Alumni</h2>
+          <h2 className="font-serif text-3xl text-[#1e40af]">Alumni</h2>
           <div className="mt-4 grid gap-6">
             {lab.alumniGroups.map((group) => (
               <section key={group.institution}>
@@ -103,7 +103,7 @@ export default function LabPage() {
               className="mx-auto h-auto w-full rounded"
             />
             <figcaption className="mt-3 text-center text-sm text-stone-600">
-              RIMLAB 2022
+              RIMLAB Members 2025
             </figcaption>
           </figure>
         </section>
