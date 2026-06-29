@@ -51,6 +51,7 @@ export default function Home() {
           />
           <TimelineSection
             icon={<GraduationCap />}
+            eyebrow=""
             heading="Education"
             items={education.map((item) => ({
               title: item.degree,
