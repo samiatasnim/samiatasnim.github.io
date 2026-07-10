@@ -13,8 +13,8 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Professor Portfolio Templates",
-  description: "Template directions for an academic portfolio website.",
+  title: "Dr. Samia Tasnim | University of Toledo",
+  description: "Assistant Professor in the Department of Electrical Engineering and Computer Science at The University of Toledo. Research in IoT, cybersecurity, mobile computing, and machine learning.",
 };
 
 export default function RootLayout({
