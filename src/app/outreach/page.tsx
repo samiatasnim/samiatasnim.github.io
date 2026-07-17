@@ -40,14 +40,21 @@ export default function OutreachPage() {
 
         <section className="mx-auto mt-10 max-w-5xl text-left">
           <div className="grid gap-6 md:grid-cols-2">
-            {outreachImages.map((imageName) => (
-              <figure key={imageName}>
+            {outreachImages.map((imageName, index) => (
+              <figure
+                key={imageName}
+                className={
+                  index === outreachImages.length - 1
+                    ? "md:col-span-2 md:w-[calc(50%_-_0.75rem)] md:justify-self-center"
+                    : undefined
+                }
+              >
                 <Image
                   src={`/outreach/${imageName}`}
                   alt={formatCaption(imageName)}
                   width={1600}
-                  height={900}
-                  className="mx-auto h-auto w-full rounded"
+                  height={1200}
+                  className="mx-auto aspect-[4/3] w-full rounded object-cover"
                 />
                 <figcaption className="mt-3 text-center text-sm text-stone-600">
                   {formatCaption(imageName)}
