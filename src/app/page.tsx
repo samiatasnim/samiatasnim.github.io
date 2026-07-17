@@ -70,26 +70,27 @@ export default function Home() {
 
 function PortraitPanel() {
   return (
-    <div className="portfolio-card relative mx-auto w-full max-h-[23rem] max-w-[14rem] overflow-hidden rounded border border-[#1e40af]/20 p-1.5 lg:mx-0 lg:justify-self-end">
-      <div className="absolute bottom-0 left-0 top-0 w-1.5 bg-[#1e40af]" />
-      <div className="absolute right-2 top-2 h-9 w-9 border-r-4 border-t-4 border-[#1d4ed8]" />
-      <div className="relative rounded border border-[#1e40af]/10 bg-[#dbeafe] p-1.5">
-        <div className="flex justify-center bg-white">
-          <Image
-            src="/headshot/SamiaTasnim_Headshot.jpg"
-            alt="Headshot of Dr. Samia Tasnim"
-            width={600}
-            height={900}
-            priority
-            className="h-auto w-full object-contain"
-          />
-        </div>
-        <div className="border-t border-[#1e40af]/10 bg-[#f8fbff] p-2">
-          <p className="text-xs font-semibold text-[#1e40af]">{siteProfile.title}</p>
-          <p className="mt-0.5 text-xs text-stone-700">{siteProfile.institution}</p>
+    <div className="mx-auto w-full max-w-[14rem] lg:mx-0 lg:justify-self-end">
+      <div className="portfolio-card relative max-h-[23rem] overflow-hidden rounded border border-[#1e40af]/20 p-1.5">
+        <div className="absolute bottom-0 left-0 top-0 w-1.5 bg-[#1e40af]" />
+        <div className="absolute right-2 top-2 h-9 w-9 border-r-4 border-t-4 border-[#1d4ed8]" />
+        <div className="relative rounded border border-[#1e40af]/10 bg-[#dbeafe] p-1.5">
+          <div className="flex justify-center bg-white">
+            <Image
+              src="/headshot/SamiaTasnim_Headshot.jpg"
+              alt="Headshot of Dr. Samia Tasnim"
+              width={600}
+              height={900}
+              priority
+              className="h-auto w-full object-contain"
+            />
+          </div>
+          <div className="border-t border-[#1e40af]/10 bg-[#f8fbff] p-2">
+            <p className="text-xs font-semibold text-[#1e40af]">{siteProfile.title}</p>
+            <p className="mt-0.5 text-xs text-stone-700">{siteProfile.institution}</p>
+          </div>
         </div>
       </div>
-    </div>
       <div className="mt-4 grid gap-2">
         <a
           href="https://scholar.google.com/citations?user=bo89KqcAAAAJ&hl=en"
