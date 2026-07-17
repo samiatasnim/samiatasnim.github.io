@@ -21,13 +21,13 @@ export default function Home() {
       <SiteHeader />
       <section
         id="home"
-        className="mx-auto grid w-full max-w-7xl gap-1 px-4 pb-14 pt-10 sm:px-6 lg:grid-cols-[1.12fr_0.88fr] lg:px-8 lg:pb-20 lg:pt-14"
+        className="mx-auto grid w-full max-w-7xl items-start gap-8 px-4 pb-8 pt-6 sm:px-6 lg:grid-cols-[minmax(0,1fr)_10rem] lg:gap-10 lg:px-8 lg:pb-10 lg:pt-8"
       >
-        <div className="flex flex-col justify-center">
-          <h1 className="max-w-3xl font-serif text-5xl leading-tight text-[#1e40af] sm:text-6xl">
+        <div>
+          <h1 className="max-w-4xl font-serif text-4xl leading-tight text-[#1e40af] sm:text-5xl">
             {about.eyebrow}
           </h1>
-          <div className="mt-6 max-w-3xl space-y-5">
+          <div className="mt-4 max-w-4xl space-y-3">
             {about.paragraphs.map((paragraph) => (
               <p key={paragraph} className="text-base leading-8 text-stone-700">
                 <LinkedParagraph text={paragraph} />
@@ -70,8 +70,8 @@ export default function Home() {
 
 function PortraitPanel() {
   return (
-    <div className="mx-auto w-full max-w-[14rem] lg:mx-0 lg:justify-self-end">
-      <div className="portfolio-card relative max-h-[23rem] overflow-hidden rounded border border-[#1e40af]/20 p-1.5">
+    <div className="mx-auto w-full max-w-[10rem] lg:mx-0 lg:justify-self-end">
+      <div className="portfolio-card relative overflow-hidden rounded border border-[#1e40af]/20 p-1.5">
         <div className="absolute bottom-0 left-0 top-0 w-1.5 bg-[#1e40af]" />
         <div className="absolute right-2 top-2 h-9 w-9 border-r-4 border-t-4 border-[#1d4ed8]" />
         <div className="relative rounded border border-[#1e40af]/10 bg-[#dbeafe] p-1.5">
@@ -82,7 +82,7 @@ function PortraitPanel() {
               width={600}
               height={900}
               priority
-              className="h-auto w-full object-contain"
+              className="h-44 w-full object-cover object-top"
             />
           </div>
           <div className="border-t border-[#1e40af]/10 bg-[#f8fbff] p-2">
@@ -91,14 +91,32 @@ function PortraitPanel() {
           </div>
         </div>
       </div>
-      <div className="mt-4 grid gap-2">
+      <div className="mt-5 grid gap-3 px-1 text-sm text-stone-600">
+        <a
+          href={`mailto:${contact.email}`}
+          className="flex items-center gap-3 transition hover:text-[#1e40af]"
+        >
+          <Mail className="h-4 w-4 text-stone-700" />
+          Email
+        </a>
+
+        <a
+          href={contact.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-3 transition hover:text-[#1e40af]"
+        >
+          <Linkedin className="h-4 w-4 text-[#0a66c2]" />
+          LinkedIn
+        </a>
+
         <a
           href="https://scholar.google.com/citations?user=bo89KqcAAAAJ&hl=en"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center justify-center gap-2 rounded border border-[#1e40af]/25 bg-white px-3 py-2 text-sm font-semibold text-[#1e40af] transition hover:bg-[#eff6ff]"
+          className="flex items-center gap-3 transition hover:text-[#1e40af]"
         >
-          <GraduationCap className="h-4 w-4" />
+          <GraduationCap className="h-4 w-4 text-stone-700" />
           Google Scholar
         </a>
 
@@ -106,18 +124,10 @@ function PortraitPanel() {
           href="https://orcid.org/0009-0002-1090-2887"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center justify-center gap-2 rounded border border-[#16a34a]/25 bg-white px-3 py-2 text-sm font-semibold text-[#166534] transition hover:bg-[#f0fdf4]"
+          className="flex items-center gap-3 transition hover:text-[#166534]"
         >
-          <IdCard className="h-4 w-4" />
+          <IdCard className="h-4 w-4 text-[#16a34a]" />
           ORCID
-        </a>
-
-        <a
-          href={`mailto:${contact.email}`}
-          className="flex items-center justify-center gap-2 rounded border border-[#7c3aed]/25 bg-white px-3 py-2 text-sm font-semibold text-[#6d28d9] transition hover:bg-[#f5f3ff]"
-        >
-          <Mail className="h-4 w-4" />
-          Email
         </a>
       </div>
     </div>
