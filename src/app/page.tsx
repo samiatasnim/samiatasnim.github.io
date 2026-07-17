@@ -21,13 +21,13 @@ export default function Home() {
       <SiteHeader />
       <section
         id="home"
-        className="mx-auto grid w-full max-w-7xl gap-8 px-4 pb-8 pt-6 sm:px-6 lg:grid-cols-[minmax(0,1fr)_14rem] lg:gap-12 lg:px-8 lg:pb-10 lg:pt-8"
+        className="mx-auto grid w-full max-w-7xl gap-1 px-4 pb-14 pt-10 sm:px-6 lg:grid-cols-[1.12fr_0.88fr] lg:px-8 lg:pb-20 lg:pt-14"
       >
         <div className="flex flex-col justify-center">
-          <h1 className="max-w-4xl font-serif text-4xl leading-tight text-[#1e40af] sm:text-5xl">
+          <h1 className="max-w-3xl font-serif text-5xl leading-tight text-[#1e40af] sm:text-6xl">
             {about.eyebrow}
           </h1>
-          <div className="mt-4 max-w-4xl space-y-3">
+          <div className="mt-6 max-w-3xl space-y-5">
             {about.paragraphs.map((paragraph) => (
               <p key={paragraph} className="text-base leading-8 text-stone-700">
                 <LinkedParagraph text={paragraph} />
