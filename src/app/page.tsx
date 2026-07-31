@@ -24,12 +24,12 @@ export default function Home() {
         className="mx-auto grid w-full max-w-7xl items-start gap-8 px-4 pb-8 pt-6 sm:px-6 lg:grid-cols-[minmax(0,1fr)_10rem] lg:gap-10 lg:px-8 lg:pb-10 lg:pt-8"
       >
         <div>
-          <h1 className="max-w-4xl font-serif text-4xl leading-tight text-[#1e40af] sm:text-5xl">
+          <h1 className="max-w-4xl font-serif text-3xl leading-tight text-[#1e40af] sm:text-5xl">
             {about.eyebrow}
           </h1>
           <div className="mt-4 max-w-4xl space-y-3">
             {about.paragraphs.map((paragraph) => (
-              <p key={paragraph} className="text-base leading-8 text-stone-700">
+              <p key={paragraph} className="text-[15px] leading-7 text-stone-700 sm:text-base sm:leading-8">
                 <LinkedParagraph text={paragraph} />
               </p>
             ))}
