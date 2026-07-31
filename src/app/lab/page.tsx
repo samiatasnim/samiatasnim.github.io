@@ -101,7 +101,8 @@ export default function LabPage() {
               width={1600}
               height={900}
               loading="eager"
-              className="block h-auto w-full rounded"
+              decoding="sync"
+              className="block h-auto max-w-full rounded"
             />
             <figcaption className="mt-3 text-center text-sm text-stone-600">
               RIMLAB Members 2025
