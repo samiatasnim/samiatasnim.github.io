@@ -95,7 +95,7 @@ export default function LabPage() {
         </section>
         <section className="mx-auto mt-10 max-w-[36rem] text-left">
           <figure>
-            <Image
+            <img
               src="/lab/RIMLAB.jpg"
               alt="Reliable and Intelligent Mobile Networks Lab"
               width={1600}
