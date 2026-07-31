@@ -45,7 +45,7 @@ export default function PublicationsPage() {
             >
               {showAllPublications
                 ? "Show fewer publications"
-                : `Show all ${publications.refereed.length} publications`}
+                : `Show all publications`}
             </button>
           ) : null}
 
