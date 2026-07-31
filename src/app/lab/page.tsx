@@ -100,7 +100,10 @@ export default function LabPage() {
               alt="Reliable and Intelligent Mobile Networks Lab"
               width={1600}
               height={900}
-              className="mx-auto h-auto w-full rounded"
+              sizes="(max-width: 640px) calc(100vw - 2rem), 36rem"
+              className="block h-auto w-full rounded"
+              priority
+              unoptimized
             />
             <figcaption className="mt-3 text-center text-sm text-stone-600">
               RIMLAB Members 2025
