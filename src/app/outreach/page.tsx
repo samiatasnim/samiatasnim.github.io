@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { SiteHeader } from "@/components/site-header";
 import { ContentShell, PagePanel } from "@/components/ui";
 import { outreachActivities } from "@/content/outreach/activities";
@@ -49,12 +48,14 @@ export default function OutreachPage() {
                     : undefined
                 }
               >
-                <Image
+                <img
                   src={`/outreach/${imageName}`}
                   alt={formatCaption(imageName)}
-                  width={1600}
-                  height={1200}
-                  className="mx-auto aspect-[4/3] w-full rounded object-cover"
+                  width="1600"
+                  height="1200"
+                  loading="eager"
+                  decoding="sync"
+                  className="mx-auto block aspect-[4/3] h-auto w-full rounded object-cover"
                 />
                 <figcaption className="mt-3 text-center text-sm text-stone-600">
                   {formatCaption(imageName)}
