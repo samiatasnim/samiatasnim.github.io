@@ -27,18 +27,29 @@ export const lab = {
       period: "Summer 2026 - Present",
     },
     {
-      name: "Diptesh Thakuri",
-      period: "Summer 2026",
-    },
-    {
-      name: "Kritan Aryal",
-      period: "Summer 2026",
-    },
+      name: "Fatimah Alnasser",
+      period: "Fall 2026 - Present",
+    },    
   ],
   alumniGroups: [
     {
       institution: "The University of Toledo",
       members: [
+        {
+        name: "Diptesh Thakuri",
+        details: "Undergraduate student",
+        period: "Summer 2026",
+        },
+        {
+        name: "Kritan Aryal",
+        details: "Undergraduate student",
+        period: "Summer 2026",
+        },
+        {
+        name: "Archit Pansare",
+        details: "Undergraduate student",
+        period: "Summer 2026",
+        },
         {
           name: "Ananya Singh",
           details: "Undergraduate student",
