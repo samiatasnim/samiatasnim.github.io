@@ -34,6 +34,19 @@ export const publications = {
       link: "https://www.mdpi.com/1424-8220/25/4/1171",
     },
     {
+      authors: "Afroza Nowshin, and Samia Tasnim",
+      title: "On-Device Response to Coordinated False-Data Injection in Water Distribution Systems (Accepted)",
+      details:
+        "11th IEEE International Workshop on Cyber-Physical Systems Security (CPS-Sec 2026), in conjunction with the IEEE Conference on Communications and Network Security (CNS), Delaware, USA, September 17, 2026.",
+    },
+    {
+      authors: "Tasnimul Hasan, and Samia Tasnim",
+      title: "CriticIDS: LLM-Augmented Intrusion Detection with AutoML and Explainability for IoT Networks",
+      details:
+        "2026 IEEE 50th Annual Computers, Software, and Applications Conference (COMPSAC), Madrid, Spain, July 08, 2026. DOI: 10.1109/COMPSAC69091.2026.00183. (Acceptance rate: 26.7%).",
+      link: "https://doi.org/10.1109/COMPSAC69091.2026.00183",
+    },
+    {
       authors: "Tasnimul Hasan, and Samia Tasnim",
       title: "Generalizable Intrusion Detection for IoT: A Cost-Sensitive Multimodal Approach",
       details:
